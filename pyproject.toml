@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+    "oldest-supported-numpy",
+    "setuptools>=42",
+    "wheel",
+    "build",
+    ]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ['DPNF']
+
+[project]
+name = 'DPNF'
+description = 'DPNFMM: Dirichlet Process Normalising Flow Mixture Model'
+version = '0.0.1'
+requires-python = '< 3.12'
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+keywords = ['Dirichlet process', 'normalising flow']
+authors = [
+  {name = "Stefano Rinaldi", email = "stefano.rinaldi@uni-heidelberg.de"},
+  {name = "Matt Mould", email = "mmould@mit.edu"},
+  {name = "John Veitch", email = "john.veitch@glasgow.ac.uk"},
+  {name = "Ben Farr", email = "bfarr@uoregon.edu"}
+  ]
+
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  'Topic :: Scientific/Engineering :: Astronomy',
+  'Topic :: Scientific/Engineering :: Physics',
+]
+
+dependencies = [
+    "figaro",
+    ]
